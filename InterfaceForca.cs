@@ -26,14 +26,17 @@ public class InterfaceForca
         }
     }
 
-    public void inicializacao()
+    public void letreiroInicial()
     {
         Console.WriteLine(" ********  ********  ********  ********  ******** ");
         Console.WriteLine(" **        **    **  **    **  **        **    ** ");
         Console.WriteLine(" ********  **    **  ********  **        ******** ");
         Console.WriteLine(" **        **    **  ** **     **        **    ** ");
         Console.WriteLine(" **        ********  **   ***  ********  **    ** ");
-
+    }
+    public void inicializacao()
+    {
+        letreiroInicial();
         volta:
         Console.WriteLine("\nEscolha o nível do jogo: [1]FÁCIL [2]MÉDIO [3]DIFÍCIL: ");
         string numTmp = Console.ReadLine();
@@ -62,8 +65,8 @@ public class InterfaceForca
 
         for (int i = 0; i < this.numCaracter; i++)
         {
-            if (letra.Equals(this.palavraSelecionada[i]))
-                this.tmp[i] = letra;
+            if (Char.ToUpper(this.palavraSelecionada[i]).Equals(Char.ToUpper(letra)))
+                this.tmp[i] = this.palavraSelecionada[i];
             else
             {
                 cont++;
@@ -105,6 +108,8 @@ public class InterfaceForca
             Console.WriteLine(" ********   \n **    (_)  \n **     |   \n **         \n **         \n **");
         else if(num == 1)
             Console.WriteLine(" ********   \n **    (_)  \n **         \n **         \n **         \n **");
+        else if(num == 0)
+            Console.WriteLine(" ********   \n **         \n **         \n **         \n **         \n **");
     }
     public void jogando()
     {
@@ -117,11 +122,16 @@ public class InterfaceForca
             Console.Clear();
             
         }
-        if(!(this.tmp.Contains('_')))
-            Console.WriteLine("PARABENS, GANHOU O JOGO!");
+
+        if (!(this.tmp.Contains('_')))
+        {
+            letreiroInicial();
+            Console.WriteLine("\nPARABENS, GANHOU O JOGO!");
+        }
         else
         {
-            Console.WriteLine("PERDEU O JOGO!");
+            letreiroInicial();
+            Console.WriteLine("\nPERDEU O JOGO!");
         }
     }
 }
