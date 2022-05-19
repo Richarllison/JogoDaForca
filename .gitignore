@@ -1,0 +1,13 @@
+# Arquivos ignorados por padrão 
+/ prateleira / 
+/ workspace.xml 
+# Arquivos ignorados pelo piloto 
+/ modules.xml 
+/ .idea.JogoDaForca.iml 
+/ contentModel.xml 
+/ projectSettingsUpdater.xml 
+# Solicitações de cliente HTTP baseadas em editor 
+/ httpSolicitações / 
+# Arquivos ignorados do armazenamento local da fonte de dados 
+/ dataSources / 
+/ dataSources.local.xml 
