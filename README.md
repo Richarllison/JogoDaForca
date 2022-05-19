@@ -1,6 +1,8 @@
 # JogoDaForca
 
 ![Animation](https://user-images.githubusercontent.com/86261289/169260648-b0929473-fd6f-4110-a09e-4101bc331236.gif)
+![Animation1](https://user-images.githubusercontent.com/86261289/169261249-7851d1ee-e573-4219-a051-d55a0b4ca62b.gif)
+![Animation2](https://user-images.githubusercontent.com/86261289/169261377-8073054a-3ac3-41af-894e-aed319711e36.gif)
 
 Objetivo: usando uma aplicação do tipo consola, criar um jogo da forca que irá ler uma lista de nomes de filmes, nomes de jogos e o países. Com essa aplicação poderá melhorar os seus conhecimentos sobre manipulação de strings e leitura e escrita de ficheiro.
 
